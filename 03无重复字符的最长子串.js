@@ -21,15 +21,32 @@
 //   return len
 // };
 
+// lengthOfLongestSubstring = function(s) {
+//   let minindex = 0;
+//   let len = 0;
+//   for ( let i =0; i < s.length; i++ ) {
+//     s.indexOf(s[i], minindex) < i ?
+//     minindex = s.indexOf(s[i], minindex) + 1 :
+//     len =  Math.max(len, i + 1 - minindex )
+//   }
+//   return len;
+// };
+
+// console.log(lengthOfLongestSubstring("hhbdnffff"))
+
 lengthOfLongestSubstring = function(s) {
   let minindex = 0;
   let len = 0;
-  for ( let i =0; i < s.length; i++ ) {
+  for(let i = 0; i < s.length; i++) {
     s.indexOf(s[i], minindex) < i ?
-    minindex = s.indexOf(s[i], minindex) + 1 :
-    len =  Math.max(len, i + 1 - minindex )
+    minindex = s.indexOf(s[i]) + 1 :
+    len = Math.max(len, i+1-minindex)
   }
-  return len;
+  return len
 };
 
-console.log(lengthOfLongestSubstring("hhbdnffff"))
+console.log(lengthOfLongestSubstring("hhbdhjgjhkgnflllfff"))
+
+// let str = "jhfhfhhf"
+// console.log(str.indexOf('f', 3))
+
