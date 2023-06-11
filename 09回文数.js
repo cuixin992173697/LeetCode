@@ -38,4 +38,4 @@ var isPalindrome = function(x) {
   return stack.length == 0
 };
 
-console.log(isPalindrome(-12321))
+console.log(isPalindrome(-123321))
