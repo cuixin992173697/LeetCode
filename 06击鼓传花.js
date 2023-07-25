@@ -19,6 +19,6 @@ function hotPotato(names, num) {
 
   return queue.shift()
 }
-
+ 
 const name = hotPotato(["cuixin", "james", "kobe", "curry"], 3)
 console.log(name);
